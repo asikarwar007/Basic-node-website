@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title abhimanyu
+    // Bootstrap core CSS
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/jumbotron.css', rel='stylesheet')
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      a.navbar-brand(href='#') Navbar
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsExampleDefault.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='/')
+              | Home 
+              
+          li.nav-item
+            a.nav-link(href='/about') About
+          li.nav-item
+            a.nav-link.disabled(href='/contact') Contact
+          
+    main(role='main')
+      block content
+        hr
+      // /container
+    footer.container
+      p © Company 2017
